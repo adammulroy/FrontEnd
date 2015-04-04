@@ -1,5 +1,3 @@
-from multiprocessing import forking
-
 __author__ = 'adam.mulroy'
 
 import turtle
