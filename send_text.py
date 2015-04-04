@@ -8,6 +8,6 @@ token = 'twiliotoken'
 
 client = rest.TwilioRestClient(account, token)
 
-call = client.calls.create(from_='8327802144',
-                           to='8505869170',
+call = client.calls.create(from_='Number',
+                           to='Number',
                            url="http://twimlets.com/message?Message")
