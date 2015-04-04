@@ -1,13 +1,11 @@
+from multiprocessing import forking
+
 __author__ = 'adam.mulroy'
 
 import turtle
 
-window = turtle.Screen()
-window.bgcolor("red")
 
-
-def draw_square():
-    brad = turtle.Turtle()
+def draw_square(brad):
     n = 0
     while n < 4:
         brad.forward(120)
@@ -15,15 +13,13 @@ def draw_square():
         n += 1
 
 
-def draw_circle():
-    angie = turtle.Turtle()
+def draw_circle(angie):
     angie.shape('arrow')
     angie.color('yellow')
     angie.circle(100)
 
 
-def draw_triangle():
-    triangle = turtle.Turtle()
+def draw_triangle(triangle):
     triangle.shape('turtle')
     n = 1
     while n < 4:
@@ -31,6 +27,20 @@ def draw_triangle():
         triangle.right(120)
         n += 1
 
-draw_square()
-draw_circle()
-draw_triangle()
+
+def draw_screen():
+    window = turtle.Screen()
+    window.bgcolor("red")
+
+    square = turtle.Turtle()
+    square.speed(5)
+    for i in range(1, 73):
+        draw_square(square)
+        square.right(5)
+
+    #draw_circle()
+    #circle = turtle.Turtle()
+    #draw_triangle(triangle)
+    #triangle = turtle.Turtle()
+
+draw_screen()
