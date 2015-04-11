@@ -6,7 +6,6 @@ __author__ = 'adam.mulroy'
 def read_textfile(filepath):
     output = open(filepath)
     content = output.read()
-    print(content)
     output.close()
     check_profanity(content)
 
