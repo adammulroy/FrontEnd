@@ -13,10 +13,14 @@ avatar = movie.Movie('Avatar',
                      'https://www.youtube.com/watch?v=cRdxXPV9GNQ')
 
 king_kong = movie.Movie('King Kong',
-                       'A big ape and a babe',
-                       'http://upload.wikimedia.org/wikipedia/en/6/6a/Kingkong_bigfinal1.jpg',
-                       'https://www.youtube.com/watch?v=B5j_2sRUTbU')
+                        'A big ape and a babe',
+                        'http://upload.wikimedia.org/wikipedia/en/6/6a/Kingkong_bigfinal1.jpg',
+                        'https://www.youtube.com/watch?v=B5j_2sRUTbU')
 
-movies = [toy_story, avatar, king_kong]
+# movies = [toy_story, avatar, king_kong]
 
-fresh_tomatoes.open_movies_page(movies)
+# fresh_tomatoes.open_movies_page(movies)
+
+print(movie.Movie.__doc__)
+print(movie.Movie.__module__)
+print(movie.Movie.__name__)
